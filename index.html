@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>BATTLESHIP</h1>
+      <ol>
+        <li>
+          <p>Click on the cells to reveal the image hidden behind them.</p>
+        </li>
+        <li><p>There are 5 ships hidden in the game.</p></li>
+        <li>
+          <p>
+            You win if you can find all ships in less than 8 clicks, else you
+            lose.
+          </p>
+        </li>
+      </ol>
+      <div class="main-grid">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <dialog class="dialog-box-loss">
+        <p class="dialog-text-loss dialog-p">
+          You have used all your 8 chances, You Lose
+        </p>
+        <button class="dialog-close-button-loss dialog-btn">CLOSE</button>
+      </dialog>
+      <dialog class="dialog-box-win">
+        <p class="dialog-text-win dialog-p">You Won !!</p>
+        <button class="dialog-close-button-win dialog-btn">CLOSE</button>
+      </dialog>
+      <button class="reset-button">RESET</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
