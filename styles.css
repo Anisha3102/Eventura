@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #2c3e50, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#first-page {
+    display: block;
+}
+
+#next-page {
+    display: none;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+
+    flex-direction: column;
+    gap: 15px;
+
+    width: 300px;
+}
+
+.info {
+    text-align: center;
+    font-size: 20px;
+}
+
+#next-page h1,
+h2 {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 25px;
+}
+
+#join {
+    text-align: center;
+    font-size: 20px;
+}
+
+.dialog-box {
+    display: none;
+    background: #ffcccc;
+    color: #e74c3c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 100px
+}
+
+.dialog-box button {
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    /* margin-right: 90px; */
+    width: 50%;
+    margin-top: 10px;
+}
+
+#form1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+#form1 h1 {
+    color: #0d47a1;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#form1 label {
+    color: #0d47a1;
+}
+
+#form1 input,
+textarea,
+button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#form1 input:focus,
+#form1 textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+
+#form1 button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+#form1 button:hover {
+    background-color: #e65c00;
+}
